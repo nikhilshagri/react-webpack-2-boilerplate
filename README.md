@@ -1,0 +1,1 @@
+Boilerplate for generating static websites harnessing the power of React components, using the static-site-generator-webpack-plugin

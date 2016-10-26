@@ -1,0 +1,21 @@
+{
+  "name": "react-static-website-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for generating static websites harnessing the power of React components, using the static-site-generator-webpack-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "es6",
+    "react-router",
+    "static-site-generator-webpack-plugin"
+  ],
+  "author": "Nikhil Shagrithaya",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}
