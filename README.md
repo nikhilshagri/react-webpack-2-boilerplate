@@ -1,1 +1,1 @@
-Boilerplate for generating static websites harnessing the power of React components, using the static-site-generator-webpack-plugin
+Boilerplate for using React with [Webpack 2](https://github.com/webpack/webpack). Webpack [v2.1.0-beta.25](https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.25) is used for building this repo. Since Webpack 2 is still in beta, some features might change in the final release.
