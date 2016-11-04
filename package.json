@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "./node_modules/.bin/webpack --progress --profile --colors",
-    "dev": "./node_modules/.bin/webpack-dev-server --progress --profile --colors",
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --profile",
     "start": "npm run dev"
   },
   "keywords": [

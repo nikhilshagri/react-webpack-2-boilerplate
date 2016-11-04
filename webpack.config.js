@@ -1,32 +1,32 @@
-const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
-
-const paths = ['/'];
 
 module.exports = {
+    context: __dirname,
     entry: {
         'main': './index.js',
     },
     output: {
-        filename: 'bundle.js',
-        path: 'dist',
-        libraryTarget: 'umd'
+        path: __dirname + 'dist/assets',
+        filename: '[name].bundle.js',
+        publicPath: '/assets'
+    },
+    devServer: {
+        contentBase: __dirname,
     },
     module: {
-        loaders: [
+        rules: [
             {  
                 test: /\.jsx|\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['es2015', 'react']
+                    }
+                }]
             }
         ]
     },
-    plugins: [
-        new StaticSiteGeneratorPlugin('main', paths, {greet: 'Hello'})
-    ],
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx']
     }
 };
