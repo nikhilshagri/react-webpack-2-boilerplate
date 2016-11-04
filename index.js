@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import ReactDOM from 'react-dom';
+import Root from './components/Root.jsx';
 
-import Root from './components/Root';
-
-module.exports = function render(locals, callback) {
-    const html = ReactDOMServer.renderToString(React.createElement(Root));
-    callback(null, '<!DOCTYPE html>' + '<html>' + html + '</html>');
-};
+ReactDOM.render(
+  <Root />,
+  document.getElementById('mountNode')
+);
